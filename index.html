@@ -26,53 +26,55 @@
           </p>
         </div>
       </section>
-      <div class="topLine"></div>
-      <div class="bottomLine"></div>
       <form>
+        <div class="topLine"></div>
+        <div class="bottomLine"></div>
         <section>
           <fieldset>
-            <h3>Contact Information</h3>
-
             <div>
-              <label for="Full Name">Full Name</label>
-              <input type="text" placeholder="Required" />
-            </div>
+              <h3>Contact Information</h3>
 
-            <div>
-              <label for="Email">Email</label>
-              <input type="text" placeholder="Required" />
-            </div>
+              <div>
+                <label for="Full Name">Full Name</label>
+                <input type="text" placeholder="Required" />
+              </div>
 
-            <div>
-              <label for="Phone Number">Phone Number</label>
-              <input type="text" />
-            </div>
+              <div>
+                <label for="Email">Email</label>
+                <input type="text" placeholder="Required" />
+              </div>
 
-            <div>
-              <label for="Street Address">Street Address</label>
-              <input type="text" />
-            </div>
+              <div>
+                <label for="Phone Number">Phone Number</label>
+                <input type="text" />
+              </div>
 
-            <div>
-              <label for="City">City</label>
-              <input type="text" />
-            </div>
+              <div>
+                <label for="Street Address">Street Address</label>
+                <input type="text" />
+              </div>
 
-            <div>
-              <label for="State">State</label>
-              <select name="state" id="state" placeholder="Choose State">
-                <option class="optionPlaceholder" value="" disabled selected>
-                  Choose State
-                </option>
-                <optgroup label="States">
-                  <option value="Florida">Florida</option>
-                </optgroup>
-              </select>
-            </div>
+              <div>
+                <label for="City">City</label>
+                <input type="text" />
+              </div>
 
-            <div>
-              <label for="Zip Code">Zip Code</label>
-              <input type="text" id="zipInput" />
+              <div>
+                <label for="State">State</label>
+                <select name="state" id="state" placeholder="Choose State">
+                  <option class="optionPlaceholder" value="" disabled selected>
+                    Choose State
+                  </option>
+                  <optgroup label="States">
+                    <option value="Florida">Florida</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              <div class="zipCode">
+                <label for="Zip Code">Zip Code</label>
+                <input type="text" id="zipInput" />
+              </div>
             </div>
           </fieldset>
         </section>
@@ -127,7 +129,7 @@
           </fieldset>
 
           <div class="submit__Container">
-            <input type="submit" class="submit__button" />
+            <input type="submit" class="submit__button" value="Sign Up" />
             <p>Copyright The Code Review</p>
           </div>
         </section>

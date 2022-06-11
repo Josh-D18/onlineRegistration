@@ -60,16 +60,32 @@ header {
 
 /* Form */
 
+form {
+  max-width: 768px;
+}
+
+@media (min-width: 768px) {
+  main {
+    margin: 0 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    margin: 0 8rem;
+  }
+}
+
 fieldset {
   border: 0;
   display: flex;
   flex-direction: column;
 }
-fieldset > div {
+fieldset > div > div {
   padding: 0.5rem 0;
 }
 
-fieldset > div {
+fieldset > div > div {
   padding: 0.5rem 0;
   display: flex;
   flex-direction: column;
@@ -80,7 +96,7 @@ fieldset > div > label {
 }
 
 input[type="text"] {
-  width: 18rem;
+  width: 100%;
   height: 3rem;
   border: 0;
   background-color: lightgrey;
@@ -88,7 +104,7 @@ input[type="text"] {
 }
 
 select {
-  width: 18rem;
+  width: 100%;
   height: 3rem;
   border: 0;
   background-color: lightgrey;
@@ -100,7 +116,7 @@ select {
 }
 
 input[type="text"]::placeholder {
-  padding-left: 13rem;
+  padding-left: 80%;
   font-style: italic;
 }
 
@@ -142,6 +158,7 @@ label {
   font-size: 21px;
   border: 0px;
   border-radius: 4px;
+  font-weight: bold;
 }
 
 .submit__Container {
@@ -156,4 +173,49 @@ label {
   font-size: 14px;
   text-align: center;
   padding-top: 1rem;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+  input[type="text"] {
+    width: 420px;
+  }
+
+  fieldset > div > h3 {
+    padding-left: 3rem;
+  }
+
+  fieldset > div > div {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  select {
+    width: 420px;
+  }
+  label {
+    width: 118px;
+  }
+
+  #zipInput {
+    width: 30%;
+  }
+
+  .zipCode {
+    width: 460px;
+  }
+}
+
+@media (min-width: 768px) {
+  input[type="text"]::placeholder {
+    padding-left: 75%;
+  }
+}
+
+@media (min-width: 1024px) {
+  input[type="text"]::placeholder {
+    padding-left: 93%;
+  }
 }
