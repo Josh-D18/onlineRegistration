@@ -72,7 +72,7 @@
 
             <div>
               <label for="Zip Code">Zip Code</label>
-              <input type="text" class="zipInput" />
+              <input type="text" id="zipInput" />
             </div>
           </fieldset>
         </section>
@@ -83,35 +83,53 @@
           <fieldset>
             <h3>Newsletter</h3>
             <div class="newsletter__container">
-              <input type="radio" />
-              <label for="HTML News">HTML NEWS</label>
+              <div>
+                <input type="checkbox" name="newsletters" class="formButtons" />
+                <label for="HTML News">HTML News</label>
+              </div>
 
-              <input type="radio" />
-              <label for="HTML News">HTML NEWS</label>
+              <div>
+                <input type="checkbox" class="formButtons" name="newsletters" />
+                <label for="HTML News">CSS News</label>
+              </div>
 
-              <input type="radio" />
-              <label for="HTML News">HTML NEWS</label>
+              <div>
+                <input type="checkbox" class="formButtons" name="newsletters" />
+                <label for="HTML News">Javascript News</label>
+              </div>
             </div>
 
             <p>Newsletter format</p>
             <div class="newsletter__container">
-              <input type="checkbox" />
-              <label>HTML</label>
+              <div>
+                <input
+                  class="formButtons"
+                  type="radio"
+                  name="newsletterformat"
+                />
+                <label>HTML</label>
+              </div>
 
-              <input type="checkbox" />
-              <label>Plain text</label>
+              <div>
+                <input
+                  class="formButtons"
+                  type="radio"
+                  name="newsletterformat"
+                />
+                <label>Plain text</label>
+              </div>
             </div>
 
             <div class="newsletter__container">
               <p>Other topics you'd like to hear about</p>
-              <textarea></textarea>
+              <textarea class="textarea"></textarea>
             </div>
           </fieldset>
 
-          <div>
-            <input type="submit" />
+          <div class="submit__Container">
+            <input type="submit" class="submit__button" />
+            <p>Copyright The Code Review</p>
           </div>
-          <p>Copyright The Code Review</p>
         </section>
       </form>
     </main>
