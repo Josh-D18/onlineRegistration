@@ -9,8 +9,10 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
   font-family: "Merriweather", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main {
@@ -34,6 +36,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .title {
@@ -81,17 +84,12 @@ fieldset {
   display: flex;
   flex-direction: column;
 }
-fieldset > div > div {
-  padding: 0.5rem 0;
-}
-
-fieldset > div > div {
-  padding: 0.5rem 0;
-  display: flex;
-  flex-direction: column;
-}
 
 fieldset > div > label {
+  padding: 0.5rem 0;
+}
+
+.contactInputContainer {
   padding: 0.5rem 0;
 }
 
@@ -101,6 +99,7 @@ input[type="text"] {
   border: 0;
   background-color: lightgrey;
   border-radius: 5px;
+  margin-top: 1rem;
 }
 
 select {
@@ -109,6 +108,7 @@ select {
   border: 0;
   background-color: lightgrey;
   border-radius: 5px;
+  margin-top: 1rem;
 }
 
 .optionPlaceholder {
@@ -124,55 +124,8 @@ label {
   margin-bottom: 0.5rem;
 }
 
-#zipInput {
-  width: 50%;
-}
-
 .formButtons {
   margin-right: 0.5rem;
-}
-
-/* Newsletter Form */
-
-.newsletter__container {
-  display: flex;
-}
-
-.newsletter__container > p {
-}
-
-.newsletter__container > .textarea {
-  border: 0;
-  background-color: lightgrey;
-  width: 100%;
-  height: 130px;
-  resize: none;
-  border-radius: 5px;
-}
-
-.submit__button {
-  width: 100%;
-  height: 50px;
-  color: white;
-  background-color: #4bbee3;
-  font-size: 21px;
-  border: 0px;
-  border-radius: 4px;
-  font-weight: bold;
-}
-
-.submit__Container {
-  padding-bottom: 5rem;
-  padding-top: 3rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.submit__Container > p {
-  color: lightgrey;
-  font-size: 14px;
-  text-align: center;
-  padding-top: 1rem;
 }
 
 /* Media Queries */
@@ -182,14 +135,16 @@ label {
     width: 420px;
   }
 
-  fieldset > div > h3 {
-    padding-left: 3rem;
-  }
-
-  fieldset > div > div {
+  .contactInputContainer {
+    padding: 0.5rem 0;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+  }
+
+  fieldset > div > h3 {
+    padding-left: 3rem;
   }
 
   select {
@@ -211,6 +166,15 @@ label {
 @media (min-width: 768px) {
   input[type="text"]::placeholder {
     padding-left: 75%;
+  }
+
+  #zipInput {
+    width: 50%;
+  }
+  main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
