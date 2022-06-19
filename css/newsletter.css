@@ -45,3 +45,27 @@
 .container {
   padding: 6px;
 }
+
+.textareaLabel {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.newsletterInfo {
+  font-size: 20px;
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  color: #0033cc;
+  font-weight: bold;
+}
+
+.newsletterformat {
+  font-size: 16px;
+  font-weight: normal;
+  color: grey;
+}
+
+.newsletterformatText {
+  margin: 0;
+  padding: 0.5rem;
+  color: grey;
+}

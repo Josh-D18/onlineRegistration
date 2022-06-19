@@ -62,6 +62,10 @@ header {
   font-size: 15px;
 }
 
+h2 {
+  color: #0033cc;
+}
+
 /* Form */
 
 form {
@@ -120,10 +124,7 @@ select {
   background-color: lightgrey;
   border-radius: 5px;
   margin-top: 1rem;
-}
-
-.optionPlaceholder {
-  color: grey;
+  color: #9e9e9e;
 }
 
 input[type="text"]::placeholder {
@@ -133,10 +134,30 @@ input[type="text"]::placeholder {
 
 label {
   margin-bottom: 0.5rem;
+  color: black;
+  opacity: 0.7;
 }
 
 .formButtons {
   margin-right: 0.5rem;
+}
+
+input:focus {
+  outline-color: #32a1ce;
+}
+textarea:focus {
+  outline-color: #32a1ce;
+}
+
+select {
+  outline-color: #32a1ce;
+}
+
+.contactInfo {
+  padding: 1rem 0rem;
+  font-size: 19px;
+  color: #0033cc;
+  font-weight: bold;
 }
 
 /* Media Queries */
@@ -150,13 +171,9 @@ label {
     padding: 0.5rem 0;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-around;
   }
-
-  /* fieldset > div > h3 {
-    padding-left: 3rem;
-  } */
 
   select {
     width: 369px;
@@ -191,6 +208,6 @@ label {
 
 @media (min-width: 1024px) {
   input[type="text"]::placeholder {
-    padding-left: 93%;
+    padding-left: 83%;
   }
 }
